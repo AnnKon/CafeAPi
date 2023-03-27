@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "6d60630c-c4e7-45e5-8ddf-03ae552cf385",
+		"name": "cafe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25753705"
+	},
+	"item": [
+		{
+			"name": "All Cooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/cooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/dishes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open Check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checks"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Dish in Check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "check_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "dish_id",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close Check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/close?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"close"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rating",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rating?start=1679932790&end=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rating"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1679932790"
+						},
+						{
+							"key": "end",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/checks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"checks"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
